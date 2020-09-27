@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpaceX launch schedule</title>
+    <meta
+      name="description"
+      content="View SpaceX's next 10 upcoming rocket launches"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Yrsa:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <input
+        type="checkbox"
+        class="nav-toggle bottomMargin--xl"
+        id="nav-toggle"
+      />
+      <nav>
+        <ul class="text-centered font-oswald">
+          <li>
+            <a class="nav-link-button underline" href="launches.html"
+              >Launches</a
+            >
+          </li>
+          <li class="inactive">
+            <a class="nav-link-button underline" id="nav-contact">Contact</a>
+          </li>
+
+          <li class="clearBottomMargin inactive">
+            <a class="nav-link-button active underline" href="index.html"
+              >Home</a
+            >
+          </li>
+          <ul class="flex column">
+            <li class="clearBottomMargin inactive">
+              <a class="nav-link-button" href="index.html">- Top</a>
+            </li>
+            <li class="clearBottomMargin inactive">
+              <a class="nav-link-button" href="index.html#poll-section"
+                >- Poll</a
+              >
+            </li>
+
+            <li class="inactive">
+              <a
+                id="bottom-btn"
+                class="nav-link-button"
+                href="index.html#bottom-section"
+                >- Bottom</a
+              >
+            </li>
+          </ul>
+          <li class="textbox pointer primary-color nav-link-button underline">
+            CLOSE
+          </li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label blue">
+        <span><i class="material-icons"> menu </i></span>
+      </label>
+    </header>
+
+    <main class="launches">
+      <h1 class="textbox uppercase text-centered clearBottomMargin">
+        Next 10
+        <span class="blue">SPACEX</span>
+        launches
+      </h1>
+
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="slider"></div>
+        </div>
+      </div>
+      <div class="controls">
+        <span class="arrow left"
+          ><i class="material-icons"> keyboard_arrow_left </i></span
+        >
+        <span class="arrow right"
+          ><i class="material-icons"> keyboard_arrow_right </i></span
+        >
+      </div>
+    </main>
+    <div class="modal-contact" role="dialog">
+      <div class="modal-contact-content">
+        <button class="close-contact-btn" id="close-contact-btn">
+          <i class="material-icons text-small"> close </i>
+        </button>
+        <h2 class="font-oswald clearBottomMargin bold blue">
+          Share your thoughts.
+        </h2>
+
+        <form action="demo.php" id="contact-form" method="post">
+          <fieldset>
+            <div class="contact-form-group">
+              <input
+                class="form-control"
+                name="firstname"
+                id="firstname"
+                type="text"
+                placeholder="First name required"
+              />
+              <div class="form-error" id="firstname-error">
+                The name is empty or too long. Max 50 characters.
+              </div>
+            </div>
+
+            <div class="contact-form-group">
+              <input
+                class="form-control"
+                name="Last name"
+                type="text"
+                id="lastname"
+                placeholder="Last name required"
+              />
+              <div class="form-error" id="lastname-error">
+                The name is empty or too long. Max 50 characters.
+              </div>
+            </div>
+
+            <div class="contact-form-group">
+              <input
+                class="form-control"
+                name="email"
+                type="text"
+                id="email"
+                placeholder="Email address required"
+              />
+              <small class="form-error" id="email-error">
+                Please enter a valid email address
+              </small>
+            </div>
+
+            <div class="contact-form-group">
+              <textarea
+                class="form-control"
+                name="message"
+                type="text"
+                id="message"
+                placeholder="Your message here.."
+              ></textarea>
+              <small class="form-error" id="message-error">
+                Your message must be less than 300 characters.</small
+              >
+            </div>
+          </fieldset>
+
+          <button type="submit" value="submit" class="button" id="send">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

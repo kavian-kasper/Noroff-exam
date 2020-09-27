@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpaceX vs United nations: global commons at a crossroad</title>
+    <meta
+      name="description"
+      content="Space is being privatised, and the technologically inept are stuck at earth. One third of every operational
+    satellite in space is now a SpaceX Starlink satellite, and SpaceX is looking
+    unstopable. Should United Nations regulate SpaceX’s oncoming monopoly?"
+    />
+    <meta
+      property="og:image"
+      content="http://braanaas.org/spacex/images/opengraph-thumbnail.jpg"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://braanaas.org/spacex/html" />
+    <meta
+      property="og:title"
+      content="SpaceX VS United Nations: global commons at a crossroad."
+    />
+    <meta
+      property="og:description"
+      content="One third of every operational
+    satellite in space is now a SpaceX Starlink satellite, and SpaceX is looking
+    unstopable. Should United Nations regulate SpaceX’s oncoming monopoly?"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Yrsa:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <input
+        type="checkbox"
+        class="nav-toggle bottomMargin--xl"
+        id="nav-toggle"
+      />
+      <nav>
+        <ul class="text-centered font-oswald">
+          <li class="inactive">
+            <a class="nav-link-button underline" href="launches.html"
+              >Launches</a
+            >
+          </li>
+          <li class="inactive">
+            <a class="nav-link-button underline" id="nav-contact">Contact</a>
+          </li>
+
+          <li class="clearBottomMargin">
+            <a class="nav-link-button active underline" href="#top-section"
+              >Home</a
+            >
+          </li>
+          <ul class="flex column">
+            <li class="clearBottomMargin inactive">
+              <a class="nav-link-button" href="#top-section">- Top</a>
+            </li>
+            <li class="clearBottomMargin inactive">
+              <a class="nav-link-button" href="#poll-section">- Poll</a>
+            </li>
+
+            <li class="inactive">
+              <a id="bottom-btn" class="nav-link-button" href="#bottom-section"
+                >- Bottom</a
+              >
+            </li>
+          </ul>
+          <li class="textbox pointer primary-color nav-link-button underline">
+            CLOSE
+          </li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label blue">
+        <span><i class="material-icons"> menu </i></span>
+      </label>
+    </header>
+
+    <main class="home">
+      <section class="scroll-section" id="top-section">
+        <p class="textbox text-large light-gray text-centered">
+          I’m a student who was assigned to make a website about
+          <span class="text-xl white">SPACEX.</span> The things I discovered
+          <span class="text-xl white">blew my mind:</span>
+        </p>
+        <h1 class="textbox text-large light-gray text-centered">
+          Space privatization, Global commons, Starlink, ITU, competition and
+          conflict..
+
+          <span class="text-xl white lineBreak"
+            >a new space race era is ongoing in 2020.</span
+          >
+        </h1>
+      </section>
+      <div class="scroll-section topMargin--md bottomMargin--xxxl">
+        <p class="textbox text-large text-centered light-gray">
+          The opinions expressed are my own.
+          <a href="#poll-section" class="link-color textbox text-large">
+            Share yours</a
+          >
+          after reading.
+        </p>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <div class="scroll-section bottomMargin--xxxl">
+        <p class="textbox text-large text-narrow">
+          Most of us have heard about
+          <span class="highlight-word">SPACEX</span> and the genius of Elon
+          Musk.
+        </p>
+
+        <p class="textbox text-large text-narrow">
+          Space buffs have heard about
+          <span class="highlight-word">Starlink</span>, SPACEX’s groundbreaking
+          satellite project.
+        </p>
+        <p class="textbox text-large text-narrow">
+          But few are aware that their
+          <span class="highlight-word">satellite spree</span> has finally forced
+          the long delayed but inevitable
+          <span class="text-xl"> conflict </span> upon the us:
+        </p>
+      </div>
+
+      <section class="scroll-section bottomMargin--xxxl">
+        <p class="textbox text-narrow uppercase text-centered light-gray">
+          Should space be:
+        </p>
+        <h2 class="textbox text-narrow uppercase text-centered text-xl">
+          The shared property of humankind
+
+          <span
+            class="textbox text-narrow uppercase text-centered light-gray lineBreak topMargin--xl"
+            >or</span
+          >
+
+          The property of pioneering spacefaring nations and private
+          enterprises?
+        </h2>
+      </section>
+
+      <div class="scroll-section topMargin--xxxl">
+        <p class="textbox font-yrsa">
+          Ever since the SPUTNIK (the first satellite in space) was launched in
+          1957, humans have (as of 8th. September 2020) put
+          <span class="font-oswald bold">8.370</span> satellites into space, of
+          which <span class="font-oswald bold">2.218</span> are operational.
+        </p>
+        <figure>
+          <figcaption class="chart-caption">
+            Number of objects
+            <span class="lineBreak">deployed in space </span>
+            <span class="lineBreak">each year</span>
+          </figcaption>
+          <a
+            class="underline link"
+            href="http://claudelafleur.qc.ca/Spacecrafts-index.html"
+            target="_blank"
+            >source</a
+          >
+          <div class="chart-container">
+            <canvas id="objectsInSpace"></canvas>
+          </div>
+        </figure>
+      </div>
+
+      <div class="scroll-section clearBottomMargin">
+        <div class="relative">
+          <p class="top right blue uppercase font-oswald text-16px">
+            1957 Sputnik
+          </p>
+          <p class="bottom left blue uppercase font-oswald text-16px">
+            2020 SPACEX satellite
+          </p>
+          <picture>
+            <source
+              media="(min-width: 650px)"
+              srcset="../images/sputnik-starlink-1400w.jpg"
+            />
+
+            <source
+              media="(max-width: 649px)"
+              srcset="../images/sputnik-starlink-800w.jpg"
+            />
+            <img
+              class="image-fit"
+              src="../images/sputnik-starlink-800w.jpg"
+              alt="A side by side juxtaposition of the Sputnik from 1957 and Starlink from 2020."
+            />
+          </picture>
+        </div>
+      </div>
+
+      <section class="scroll-section vh-70 clearBottomMargin">
+        <h2 class="textbox font-yrsa">
+          Of the <span class="font-oswald bold"> 2218 </span> operational
+          satellites, <span class="font-oswald bold"> 715 </span> belong to
+          SPACEX.
+        </h2>
+
+        <h2 class="textbox clearBottomMargin font-yrsa">
+          That equates to one third of every operational satellite in space in
+          2020
+        </h2>
+        <p class="textbox">
+          <span class="bold blue"
+            >For a single company, that's impressive.</span
+          >
+        </p>
+      </section>
+
+      <div class="scroll-section vh-70 clearBottomMargin">
+        <p class="textbox">
+          <span class="font-yrsa lineBreak"
+            >Actually, SPACEX has approval to launch 12.000 satellites into
+            orbit.
+          </span>
+          <span class="bold blue">Now that's really ambitious.</span>
+        </p>
+      </div>
+      <div class="scroll-section vh-70 clearBottomMargin">
+        <p class="textbox font-yrsa bottomMargin--xl">
+          Hold on - SPACEX has a pending application to
+          <span class="font-oswald bold blue">raise that limit to 42.000.</span>
+          Whaa....
+        </p>
+      </div>
+
+      <div class="scroll-section vh-70 clearBottomMargin">
+        <p class="textbox text-38px text-centered">
+          ...what’s up with <span class="blue">satellites</span> these days?
+        </p>
+      </div>
+
+      <div class="scroll-section vh-70">
+        <p class="textbox text-centered text-xl light-gray">
+          This is what's up
+        </p>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <section class="scroll-section bottomMargin--md">
+        <h2 class="text-centered">
+          The greatest
+          <span class="text-xl blue">space race</span> since the launch of
+          Sputnik in 1957 is taking place right now.
+        </h2>
+        <p class="textbox text-large text-centered">
+          The most expansive
+          <span class="text-xl blue">colonisation</span> events since the 19th
+          century are lined up at our doorstep.
+        </p>
+        <p class="textbox text-large text-centered">
+          The race for
+          <span class="text-xl blue">"Low earth orbits"</span> is on and SPACEX
+          is in the lead.
+        </p>
+      </section>
+      <div class="scroll-section clearBottomMargin vh-70">
+        <figure>
+          <figcaption class="chart-caption">
+            Private companies with
+            <span class="lineBreak">most operational</span>
+            <span class="lineBreak">satellites in orbit</span>
+          </figcaption>
+          <a
+            class="underline link"
+            href="https://en.wikipedia.org/wiki/Comparison_of_communication_satellite_operators"
+            target="_blank"
+            >source</a
+          >
+          <div class="chart-container">
+            <canvas id="privateSatellites"></canvas>
+          </div>
+        </figure>
+      </div>
+
+      <div class="scroll-section minusTopMargin--xxxl vh-70">
+        <figure>
+          <figcaption class="chart-caption">
+            Nations with most satellites
+            <span class="lineBreak"> launched since 1957</span>
+            <span class="lineBreak">including non-operational</span>
+          </figcaption>
+          <a
+            class="underline link"
+            href="https://www.n2yo.com/satellites/?c=&t=country"
+            target="_blank"
+            >source</a
+          >
+          <div class="chart-container">
+            <canvas id="nationSatellites"> </canvas>
+          </div>
+        </figure>
+      </div>
+
+      <section class="scroll-section minusTopMargin--xxxl">
+        <h2 class="clearBottomMargin">
+          SPACEX’s unprecedented satellite spree is due to their project,
+          Starlink.
+        </h2>
+        <p class="textbox text-large bottomMargin--xl">
+          <span class="text-xl">
+            So, what is <span class="blue">Starlink.</span> and why does it
+            require thousands of satellites?</span
+          >
+        </p>
+        <figure>
+          <a
+            href="https://www.youtube.com/watch?v=bKj4GDNhH0Q&ab_channel=MarkHandley"
+            target="_blank"
+          >
+            <img
+              id="starlink-simulation"
+              src="../images/starlink-simulation.gif"
+              alt="A brief gif animation of the earth seen from space surrounded by white and blue dots representing Starlink satellites"
+            />
+          </a>
+
+          <figcaption class="chart-caption">
+            <a
+              href="https://www.youtube.com/watch?v=bKj4GDNhH0Q&ab_channel=MarkHandley"
+              target="_blank"
+              class="underline link"
+            >
+              Simulation</a
+            >
+            of 12.000 Starlinks in orbit.
+          </figcaption>
+        </figure>
+      </section>
+
+      <div class="scroll-section vh-70 topMargin--xxxl clearBottomMargin">
+        <p class="textbox text-xl uppercase underline blue">The Good:</p>
+      </div>
+
+      <section class="scroll-section minusTopMargin--xxxl">
+        <h2
+          class="textbox text-38px uppercase text-centered blue clearBottomMargin"
+        >
+          <span class="lineBreak thin">“...Starlink</span>
+          <span class="lineBreak thin">will deliver</span>
+          <span class="lineBreak thin">high speed</span>
+          <span class="lineBreak thin">broadband internet</span>
+          <span class="lineBreak thin">to locations</span>
+          <span class="lineBreak thin">where access</span>
+          <span class="lineBreak thin">has been</span>
+          <span class="lineBreak thin">unreliable, expensive,</span>
+          <span class="lineBreak thin">or</span>
+          <span class="lineBreak thin">completely unavailable.”</span>
+        </h2>
+        <a
+          href="https://www.starlink.com/"
+          target="_blank"
+          class="chart-caption link"
+        >
+          - Starlink.com
+        </a>
+      </section>
+
+      <section class="scroll-section">
+        <p class="textbox font-yrsa">
+          Basically, it's the greatest internet satellite service ever created.
+          Despite massive technical hurdles yet to be overcome, Elon Musk’s
+          track record of making the seemingly impossible, possible, does
+          provide reason to be hopeful.
+        </p>
+
+        <h2 class="blue clearBottomMargin">
+          Half the world is without internet
+        </h2>
+        <p class="textbox font-yrsa">
+          and the benefits of internet coverage goes without saying. Currently,
+          batches of 60 Starlink satellites are launched into orbit monthly, and
+          internet latency tests are already happening. Things are looking
+          promising.
+        </p>
+        <a href="launches.html" target="_blank">
+          <button type="button" class="button">launch schedule</button>
+        </a>
+      </section>
+
+      <div class="scroll-section clearBottomMargin">
+        <p class="textbox text-xl uppercase blue">
+          <span class="lineBreak"> The not</span>
+          <span class="underline">so Good:</span>
+        </p>
+      </div>
+
+      <div class="scroll-section minusTopMargin--xxxl">
+        <p class="textbox font-yrsa">
+          While space is vast, satellite orbits are not. Especially
+          <span class="blue font-oswald text-large"
+            >Low earth orbits (LEOs)</span
+          >.
+        </p>
+        <p class="textbox text-centered uppercase">why?</p>
+        <p class="textbox font-yrsa">
+          Because their orbits are the closest to earth. Orbits further out than
+          the LEOs result in dismal internet connection speeds, shortened
+          satellite longevity, and increased space debris hazards.
+        </p>
+      </div>
+      <div class="scroll-section">
+        <figure>
+          <figcaption class="chart-caption uppercase">
+            low, medium and
+            <span class="lineBreak underline"> geostationary orbits</span>
+          </figcaption>
+          <img
+            class="image-fit contain"
+            src="../images/LEOs-653.png"
+            alt="An illustration depicting the round earth surrounded by three ascending satellite orbit"
+          />
+        </figure>
+      </div>
+
+      <section class="scroll-section bottomMargin--md">
+        <h2 class="blue clearBottomMargin">Claiming and colonising space</h2>
+        <p class="textbox">
+          is not about claiming sovereignity over empty cubic miles of the
+          endless vacuum.
+        </p>
+
+        <h2 class="blue clearBottomMargin">
+          It is about claiming as many LEOs as possible.
+        </h2>
+        <p class="textbox">
+          Colonisation of the Moon is the next substance in line, and is likely
+          to happen in 2024.
+        </p>
+      </section>
+
+      <section class="scroll-section vh-70 clearBottomMargin">
+        <h2 class="textbox text-xl pink">
+          Could SPACEX exploit their brilliance and monopolize the remaining
+          LEOs?
+        </h2>
+      </section>
+
+      <div class="scroll-section minusTopMargin--xxxl vh-70 clearBottomMargin">
+        <p class="textbox text-centered">they could...</p>
+      </div>
+      <div class="scroll-section minusTopMargin--xxxl vh-70">
+        <p class="textbox text-centered">but they haven't...</p>
+      </div>
+      <div class="scroll-section vh-70">
+        <p class="textbox text-centered">because of...</p>
+      </div>
+
+      <div class="scroll-section bottomMargin--md">
+        <picture>
+          <source media="(max-width: 768px)" srcset="../images/un-logo.svg" />
+          <source media="(min-width: 769px)" srcset="../images/un-logo.svg" />
+          <img
+            class="UN-image"
+            src="../images/un-logo.svg"
+            alt="United Nations logo"
+          />
+        </picture>
+
+        <p class="textbox text-narrow font-yrsa">
+          or, more specifically, the
+          <span class="blue font-oswald bold">ITU</span>: an agency of the UN
+          responsible for all matters related to information and communication
+          technology.
+        </p>
+      </div>
+
+      <section class="scroll-section clearBottomMargin">
+        <h2 class="uppercase underline blue bottomMargin--md">ITU</h2>
+        <p class="textbox font-yrsa">
+          <span class="lineBreak"> There are two regulatory steps</span> between
+          SPACEX and putting another LEO in orbit:
+        </p>
+        <p class="textbox text-narrow uppercase">
+          <span class="lineBreak">1. Get approval by </span>
+          the American government agency <span class="blue"> FCC.</span>
+        </p>
+        <p class="textbox text-narrow uppercase bottomMargin--xl">
+          <span class="lineBreak">2. The FCC then applies</span>
+          to the <span class="blue"> ITU</span> on behalf of SpaceX.
+        </p>
+      </section>
+
+      <div class="scroll-section">
+        <p
+          class="textbox text-narrow uppercase underline blue bottomMargin--md"
+        >
+          Current Status:
+        </p>
+        <div class="flex-container">
+          <p class="textbox text-large blue">
+            12.000 <span class="lineBreak"> LEOs</span>
+          </p>
+          <p class="textbox uppercase bold blue">
+            Approved and
+            <span class="lineBreak bold"> ready for deploymemt</span>
+          </p>
+        </div>
+        <div class="flex-container">
+          <p class="textbox text-large pink">
+            +30.000 <span class="lineBreak"> LEOs</span>
+          </p>
+          <p class="textbox uppercase bold blue">
+            fcc: approved
+            <span class="lineBreak bold pink">itu: pending</span>
+            <span class="textbox lineBreak text-small lowercase light-gray">
+              (since oct. 2019)
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <section class="scroll-section">
+        <p class="textbox text-large uppercase light-gray">
+          what <span class="lineBreak"> happens</span>
+          <span class="lineBreak"> if......</span>
+        </p>
+        <h2 class="uppercase underline blue clearBottomMargin">
+          itu approves 42.000 leo<span class="lowercase">s</span>
+        </h2>
+        <p class="textbox font-yrsa">
+          A huge part of the world without internet might finally get it, yet
+          this will likely piss off the international community because of
+          SpaceX’s monopoly of highly competitive orbits.
+        </p>
+        <h2 class="uppercase underline pink clearBottomMargin">
+          itu rejects 42.000 leo<span class="lowercase">s</span>
+        </h2>
+        <p class="textbox font-yrsa">
+          I suspect this scenario will reignite a highly discordant but
+          inevitable argument:
+          <span class="font-oswald blue text-large white lineBreak"
+            >"the common heritage of humankind”</span
+          >
+          principle and its relation to the substances of space.
+        </p>
+      </section>
+
+      <section class="scroll-section">
+        <h2 class="uppercase blue clearBottomMargin">
+          global <span class="lineBreak underline"> commons</span>
+        </h2>
+        <p class="textbox font-yrsa">
+          "The common heritage of humankind" (also called “global commons”) is
+          an an international law principle that establishes that some areas are
+          to be
+          <span class="font-oswald blue">
+            "protected from exploitation by individual nation states or
+            corporations."</span
+          >
+        </p>
+        <p class="textbox font-yrsa">
+          Historically, the principle has been key for consensual resource
+          extraction of the world’s deep oceans (such as fishing rights).
+          However.........
+        </p>
+      </section>
+
+      <div class="scroll-section">
+        <p
+          class="textbox text-large text-centered bottomMargin--md uppercase bold blue"
+        >
+          space
+        </p>
+        <span
+          class="textbox text-xl text-centered bottomMargin--md uppercase bold blue"
+          >+</span
+        >
+        <p
+          class="textbox text-large text-centered bottomMargin--md uppercase bold blue"
+        >
+          global commons
+        </p>
+        <span
+          class="textbox text-xl text-centered bottomMargin--md uppercase bold pink"
+          >=</span
+        >
+        <p
+          class="textbox text-large text-centered bottomMargin--xxxl uppercase bold pink"
+        >
+          false
+        </p>
+      </div>
+
+      <section class="scroll-section">
+        <h2 class="clearBottomMargin">Since the Moon Treaty of 1968,</h2>
+        <p class="textbox font-yrsa bottomMargin--md">
+          <span class="font-oswald bold">non-spacefaring nations</span> have
+          repeatedly pushed for a global ratification of the principle to
+          prevent the exploitation of the Moon’s natural resources by
+          spacefaring nations.
+        </p>
+        <p class="textbox font-yrsa bottomMargin--md">
+          <span class="font-oswald bold">Major spacefaring nations </span>
+          have always resisted the ratification and are currently not bounded by
+          it.
+        </p>
+        <span class="dot topMargin--xl"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </section>
+
+      <div class="scroll-section">
+        <picture>
+          <source media="(max-width: 768px)" srcset="../images/flag-768w.jpg" />
+          <source
+            media="(min-width: 769px)"
+            srcset="../images/flag-1400w.jpg"
+          />
+          <img
+            class="image-fit bottomMargin--md"
+            src="../images/flag-768w.jpg"
+            alt="United Nation flag with a tear along its middle covered up with a few bandaids"
+          />
+        </picture>
+      </div>
+
+      <div class="scroll-section bottomMargin--xxxl">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <p class="textbox font-yrsa">
+          <span class="lineBreak font-oswald text-xl"
+            >In 2020, a new space-rhetoric has become commonplace:</span
+          >
+          there is new talk of property and rights. Because LEO monopolies and
+          Moon mining beg same question:
+        </p>
+      </div>
+
+      <section class="scroll-section clearBottomMargin vh-70">
+        <h2
+          class="textbox text-narrow uppercase text-centered text-38px bottomMargin--xxxl"
+        >
+          should a limited resource in space be equally shared between nations
+        </h2>
+        <p class="textbox text-narrow uppercase text-centered light-gray">or</p>
+      </section>
+
+      <section class="scroll-section vh-70">
+        <h2 class="textbox text-narrow uppercase text-centered text-38px">
+          distributed on a first-come, first-served basis?
+        </h2>
+      </section>
+
+      <div class="scroll-section topMargin--md">
+        <p class="textbox font-yrsa text-centered">
+          <span class="lineBreak bottomMargin--md">
+            That is what is at stake in 2020.</span
+          >
+          <span class="lineBreak bottomMargin--md">
+            It is the core of the conflict that I mentioned in the
+            introduction.</span
+          >
+          <span class="lineBreak"> A conflict of interests that is</span>
+          <span class="lineBreak bottomMargin--md">
+            potentially triggered by the decision of ITU.</span
+          >
+          <span class="lineBreak"> What should the ITU decree?</span>
+        </p>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <div class="scroll-section">
+        <p
+          class="textbox text-large uppercase underline blue clearBottomMargin"
+        >
+          wrap up
+        </p>
+        <p class="textbox font-yrsa">
+          I hope this read was elucidating, and that you, like me, are struck by
+          the urgency of this topic. I’m really interested to
+          <span class="bold font-oswald"> know your opinion:</span>
+        </p>
+
+        <p class="text-xl light-gray">Should. . .</p>
+      </div>
+
+      <div id="poll-section" class="scroll-section">
+        <div class="poll-container">
+          <form action="#" method="POST">
+            <fieldset>
+              <legend class="uppercase font-oswald">
+                Should <span class="bold">ITU</span>
+                <span class="bold blue">approve</span> or
+                <span class="bold blue">decline</span> SpaceX’s request for
+                42000 LEO<span class="lowercase">s</span>?
+              </legend>
+              <div class="poll-body">
+                <div class="poll-tickboxes">
+                  <input
+                    class="inactive"
+                    type="radio"
+                    id="approve"
+                    name="itu_decision"
+                    value="approve"
+                  /><label
+                    class="poll-label uppercase bold font-oswald"
+                    for="approve"
+                    >approve</label
+                  >
+                </div>
+                <div class="poll-tickboxes">
+                  <input
+                    class=""
+                    type="radio"
+                    id="decline"
+                    name="itu_decision"
+                    value="decline"
+                  /><label
+                    class="poll-label uppercase bold font-oswald"
+                    for="decline"
+                    >Decline</label
+                  >
+                </div>
+              </div>
+            </fieldset>
+            <div class="text-centered bottomMargin--md">
+              <button
+                id="poll-submit"
+                class="button inactive"
+                type="submit"
+                value="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <p class="textbox text-large text-centered">
+          Pass your vote, and see what others voted, too.
+        </p>
+        <a class="link font-oswald underline text-centered" href="#top-section"
+          >BACK TO TOP</a
+        >
+      </div>
+
+      <section id="bottom-section" class="scroll-section">
+        <p class="textbox text-large bottomMargin--md">
+          <span class="blue">Feel free to write me</span> if you have something
+          that could contribute to this article. Or if you simply want to share
+          your opinion.
+        </p>
+        <button id="open-contact-btn" class="button">contact</button>
+      </section>
+    </main>
+    <div class="modal-contact" role="dialog">
+      <div class="modal-contact-content">
+        <button class="close-contact-btn" id="close-contact-btn">
+          <i class="material-icons text-small"> close </i>
+        </button>
+        <h2 class="font-oswald clearBottomMargin bold blue">
+          Share your thoughts.
+        </h2>
+
+        <form action="demo.php" id="contact-form" method="post">
+          <fieldset>
+            <div class="contact-form-group">
+              <input
+                class="form-control"
+                name="firstname"
+                id="firstname"
+                type="text"
+                placeholder="First name required"
+              />
+              <div class="form-error" id="firstname-error">
+                The name is empty or too long. Max 50 characters.
+              </div>
+            </div>
+
+            <div class="contact-form-group">
+              <input
+                class="form-control"
+                name="Last name"
+                type="text"
+                id="lastname"
+                placeholder="Last name required"
+              />
+              <div class="form-error" id="lastname-error">
+                The name is empty or too long. Max 50 characters.
+              </div>
+            </div>
+
+            <div class="contact-form-group">
+              <input
+                class="form-control"
+                name="email"
+                type="text"
+                id="email"
+                placeholder="Email address required"
+              />
+              <small class="form-error" id="email-error">
+                Please enter a valid email address
+              </small>
+            </div>
+
+            <div class="contact-form-group">
+              <textarea
+                class="form-control"
+                name="message"
+                type="text"
+                id="message"
+                placeholder="Your message here.."
+              ></textarea>
+              <small class="form-error" id="message-error">
+                Your message must be less than 300 characters.</small
+              >
+            </div>
+          </fieldset>
+
+          <button type="submit" value="submit" class="button" id="send">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="../js/chart.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
